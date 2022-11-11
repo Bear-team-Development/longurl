@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Longer</title>
+  </head>
+  <body>
+    <noscript>
+      <h1>你沒開javascript。</h1>
+    </noscript>
+    <script>
+      const path = window.location.pathname.substring(1);
+      const decode_str = atob(path);
+      location.href = decode_str;
+    </script>
+  </body>
+</html>
